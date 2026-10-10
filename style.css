@@ -1,0 +1,87 @@
+/* --- GitHub Profile Section --- */
+.github-card {
+  background: var(--white);
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.github-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.github-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-red);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.github-info h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--dark-text);
+  margin-bottom: 2px;
+}
+
+#gh-username {
+  color: var(--primary-red);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.github-bio {
+  color: var(--gray-600);
+  font-size: 0.95rem;
+}
+
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background: var(--light-bg);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-item i {
+  color: var(--secondary-gold);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.stat-item span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.stat-item small {
+  color: var(--gray-600);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .github-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
